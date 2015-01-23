@@ -894,7 +894,7 @@ Paragraph two.';
 
 	/*
 	 * Only fails in PHP 5.4 onwards
-	 * @covers :;esc_textarea
+	 * @covers ::esc_textarea
 	 * @ticket 23688
 	 */
 	function test_esc_textarea_charset_iso_8859_1() {
@@ -909,7 +909,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_textarea
+	 * @covers ::esc_textarea
 	 * @ticket 23688
 	 */
 	function test_esc_textarea_charset_utf_8() {
@@ -920,7 +920,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_spaces() {
 		$this->assertEquals('http://example.com/MrWordPress', esc_url('http://example.com/Mr WordPress'));
@@ -928,7 +928,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_bad_characters() {
 		$this->assertEquals('http://example.com/watchthelinefeedgo', esc_url('http://example.com/watchthelinefeed%0Ago'));
@@ -945,7 +945,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_relative() {
 		$this->assertEquals('/example.php', esc_url('/example.php'));
@@ -955,7 +955,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_protocol() {
 		$this->assertEquals('http://example.com', esc_url('http://example.com'));
@@ -972,7 +972,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_display_extras() {
 		$this->assertEquals('http://example.com/&#039;quoted&#039;', esc_url('http://example.com/\'quoted\''));
@@ -980,7 +980,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_non_ascii() {
 		$this->assertEquals( 'http://example.org/баба', esc_url( 'http://example.org/баба' ) );
@@ -989,7 +989,7 @@ Paragraph two.';
 	}
 
 	/*
-	 * @covers :;esc_url
+	 * @covers ::esc_url
 	 */
 	function test_esc_url_feed() {
 		$this->assertEquals( '', esc_url( 'feed:javascript:alert(1)' ) );
