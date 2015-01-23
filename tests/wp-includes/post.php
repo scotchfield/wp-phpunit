@@ -39,7 +39,7 @@ class Tests_Post extends WP_UnitTestCase {
 	 * @covers ::get_post
 	 * @covers ::wp_cache_get
 	 * @covers ::update_object_term_cache
-	 * @covers ::delete_post
+	 * @covers ::wp_delete_post
 	 */
 	function test_vb_insert_get_delete() {
 		register_post_type( 'cpt', array( 'taxonomies' => array( 'post_tag', 'ctax' ) ) );
