@@ -5,7 +5,7 @@
  * @group toolbar
  * @group admin
  */
-class Test_AdminBar extends WP_UnitTestCase {
+class Tests_AdminBar extends WP_UnitTestCase {
 
 	static function setUpBeforeClass() {
 		WP_UnitTestCase::setUpBeforeClass();

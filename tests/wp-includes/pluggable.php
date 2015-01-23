@@ -3,7 +3,7 @@
 /**
  * @group pluggable
  */
-class Test_Pluggable extends WP_UnitTestCase {
+class Tests_Pluggable extends WP_UnitTestCase {
 	var $user_id;
 
 	function setUp() {

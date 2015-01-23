@@ -3,7 +3,7 @@
 /**
  *
  */
-class Test_Plugin extends WP_UnitTestCase {
+class Tests_Plugin extends WP_UnitTestCase {
 
 	/**
 	 * @covers ::add_action
